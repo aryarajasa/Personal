@@ -1,0 +1,166 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background: #FC9D83;
+  }
+
+::selection {
+    color: #ffffff;
+    background: #FC9D83;
+  }
+
+.wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.greeting {
+    font-size: 22px;
+    font-family: bitter;
+    color: #214472;
+    margin-top: 52px;
+    margin-bottom: 62px;
+    text-align: center;
+}
+
+.greeting a{
+    text-decoration: none;
+    color: #214472;
+}
+
+.greeting .name {
+    box-shadow: inset 0 -13px 0 #FC9D83;
+    transition: .3s ease-out;
+}
+
+.greeting .name:hover {
+    box-shadow: inset 0 -25px 0 #FC9D83;
+}
+
+.illustration {
+    max-width:500px;
+    height: 340px;
+    margin: 0 auto;
+    background-image: url('illustration.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes goyang {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  @keyframes goyang1 {
+    0%   {transform: rotate(22deg);}
+    50%  {transform: rotate(30deg);}
+    100% {transform: rotate(22deg);}
+  }
+
+.kanan{
+    text-align: right;
+    transform: rotate()
+}
+
+.leaf{
+    animation: goyang 4s ease-out infinite;
+    position: relative;
+    z-index: 2;
+    max-width: 56px;
+    height: auto;
+    margin-top: -12%;
+    margin-bottom: -3%;
+    margin-left: 12px;
+    transform-origin: bottom center;
+}
+
+.leaf1{
+    animation: goyang1 6s ease-out infinite;
+    position: relative;
+    z-index: 2;
+    max-width: 40px;
+    height: auto;
+    margin-left: -32px;
+    margin-top: -8%;
+    margin-bottom: -4%;
+    transform-origin: bottom center;
+}
+
+.bot{
+    margin-bottom: -30px;
+    padding: 0;
+}
+
+footer{
+    background-color: #214472;
+    width: 100%;
+    height: 65vh;
+    text-align: center;
+    padding-top: 25%;
+}
+
+footer p{
+    color: white;
+    font-size: 22px;
+    font-family: bitter;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p a i{
+    transition: .2s ease-out;
+}
+
+footer p a i:hover{
+    transform: rotate(12deg);
+}
+
+.socmed i{
+    color: #fff;
+    letter-spacing: 12px;
+    font-size: 32px;
+    margin-top: 15px;
+    transition: .2s ease-out;
+    text-decoration: none;
+}
+
+.socmed i:hover{
+    color: #FE715A;
+}
+
+.hide {
+    opacity:0;
+    left:-100%;
+    transition: .5s linear;
+}
+.show {
+    opacity:1;
+    left:0;
+    transition: .5s linear;
+}
+
+button{
+    background-color: #FE715A;
+    padding: 8px 24px;
+    font-size: 16px;
+}
+
+input{
+    height: 28px;
+    padding: 0px 8px 0px 8px;
+}
